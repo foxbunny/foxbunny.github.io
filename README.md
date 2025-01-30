@@ -1,5 +1,4 @@
-# 👋 Hey, I’m [Your Name]
-
+# 👋 Hey, I’m Hajime
 Most teams think frustration is just part of the job.
 
 👎 Clunky UI that confuses users.  
