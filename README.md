@@ -13,7 +13,7 @@ But what if it wasn’t?
 🚀 **Frustration-free teams** → A team that moves faster, with less friction, and actually enjoys their work.  
 
 ## Is it real, though?
-💥 I made infinite scrolling feel effortless on mobile—at a time when people thought it was impossible.  
+💥 I made [infinite scrolling feel effortless](https://substack.com/home/post/p-156080032) on mobile—at a time when people thought it was impossible.  
 💥 I built an OTA update system for a custom Linux distro that could survive power outages and work over ultra-slow networks—so users never had to worry about failed updates.  
 💥 I helped pioneer passwordless login via email, making logins fast and easy without sacrificing security—long before it became an industry trend.  
 💥 I worked on a project where 2 developers spent 6 months building a React-MobX dashboard—only for another developer to replace it with a vanilla version in just 3 weeks. The difference? Removing friction.  
