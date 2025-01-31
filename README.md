@@ -19,6 +19,7 @@ But what if it wasn’t?
 💥 I worked on a project where 2 developers spent 6 months building a React-MobX dashboard—only for another developer to replace it with a vanilla version in just 3 weeks. The difference? Removing friction.  
 💥 I published a collection of vanilla UI patterns and developer training materials to help teams leverage the platform more effectively—whether they work with frameworks or not.  
 
-**What’s the biggest source of frustration in your product right now?** Let’s talk.
+**What’s the biggest source of frustration in your product right now?** [Let’s talk][ln].
 
 [cs1]: https://foxbunny.github.io/infinite-scrolling-lessons.html
+[ln]: https://linkedin.com/in/hajime-yamasaki-vukelic/
