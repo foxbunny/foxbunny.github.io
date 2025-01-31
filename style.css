@@ -62,6 +62,14 @@ h2 {
     margin: 2em 0 1em;
 }
 
+footer {
+    margin-top: 3em;
+    padding: 2em;
+    border: 0.1em solid #d3d3d3;
+    background: #fcfcfc;
+    border-radius: 1em;
+}
+
 .highlight {
     font-weight: bold;
 }
