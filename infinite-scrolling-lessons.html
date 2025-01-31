@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>they don't teach this in school: lessons about UX and performance that stuck with me for over 10 years</title>
+</head>
+<body>
+    <header>
+        <h1>they don't teach this in school: lessons about UX and performance that stuck with me for over 10 years</h1>
+        <p><strong>project year:</strong> 2013</p>
+    </header>
+
+    <section>
+        <h2>the problem</h2>
+        <p>In 2013, I worked on a digital book project targeting <strong>Android and iOS tablets</strong>, especially Retina iPads, which were underpowered for their high resolution. The client requested a <strong>hybrid app</strong> instead of a native one to save development costs.</p>
+        <p>The goal was to enable <strong>smooth horizontal swiping</strong> between pages while dynamically loading and unloading content to optimize memory usage. However, the rendering performance was a major challenge.</p>
+    </section>
+
+    <section>
+        <h2>the challenges</h2>
+        <ul>
+            <li>Loading new <code>&lt;img&gt;</code> elements or background images <strong>froze the UI</strong> while they loaded.</li>
+            <li>Rendering performance was <strong>especially sluggish on iPads</strong> due to their high-resolution displays and underpowered GPUs.</li>
+            <li>Swiping felt <strong>laggy and unresponsive</strong> due to rendering delays.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>the solution</h2>
+        <p>To achieve smooth performance, I implemented a few creative workarounds:</p>
+        <ul>
+            <li>Used a <strong>GPU-accelerated &lt;canvas&gt;</strong> instead of <code>&lt;img&gt;</code> elements to preload and render images seamlessly.</li>
+            <li>Implemented a <strong>3D transform hack</strong> to take advantage of GPU acceleration for fluid swiping.</li>
+            <li>Added and removed pages <strong>dynamically in the swiping direction</strong> while using margins to maintain layout stability.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>the lesson learned</h2>
+        <p>Performance is <strong>crucial for UX</strong>. A laggy experience breaks immersion, and users will always feel it—whether they realize it or not.</p>
+        <p>Interestingly, <strong>none of the techniques used here are directly supported by modern frameworks</strong>. Performance problems often require <strong>platform-specific optimizations</strong>, and relying purely on frameworks won’t solve them.</p>
+    </section>
+    
+    <footer>
+        <p><a href="index.html">← back to portfolio</a></p>
+    </footer>
+</body>
+</html>
