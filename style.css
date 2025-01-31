@@ -1,9 +1,37 @@
+@font-face {
+    font-family: 'Spectral';
+    src: url('Spectral-Regular.woff2') format('woff2'),
+        url('Spectral-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('NunitoSans7pt-Regular.woff2') format('woff2'),
+        url('NunitoSans7pt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('NunitoSans10pt-Bold.woff2') format('woff2'),
+        url('NunitoSans10pt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 :root {
     font-size: 1em;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 2em;
@@ -13,6 +41,17 @@ body {
 
 h1, h2 {
     line-height: 1.2;
+    font: inherit;
+    color: inherit;
+}
+
+h1 {
+    font-family: 'Spectral';
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150$;
 }
 
 .highlight {
