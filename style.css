@@ -1,0 +1,25 @@
+:root {
+    font-size: 1em;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2em;
+    max-width: 50em;
+    margin: auto;
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.cta {
+    margin-top: 2em;
+    font-size: 1.2em;
+}
