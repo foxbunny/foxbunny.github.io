@@ -37,6 +37,11 @@ body {
     padding: 2em;
     max-width: 50em;
     margin: auto;
+    
+    background-image: var(--bg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 header {
