@@ -53,6 +53,9 @@ h1 {
     font-family: 'Spectral';
     font-size: clamp(1.2em, 8vw, 250%);
     line-height: 1.2;
+    text-wrap: balance;
+    padding-left: 1em;
+    text-indent: -1.7em;
 }
 
 h2 {
