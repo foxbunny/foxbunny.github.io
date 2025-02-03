@@ -107,6 +107,10 @@ li:not([data-bullet])::before {
     content: '💥';
 }
 
+.impact li::before {
+    content: '✅';
+}
+
 .highlight {
     font-weight: bold;
 }
