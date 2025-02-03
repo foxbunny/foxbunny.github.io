@@ -22,9 +22,9 @@
     <section>
         <h2>⚠️ The challenges</h2>
         <ul>
-            <li>📸 Loading new <code>&lt;img&gt;</code> elements or background images <strong>froze the UI</strong> while they loaded.</li>
-            <li>🐢 Rendering performance was <strong>especially sluggish on iPads</strong> due to their high-resolution displays and underpowered GPUs.</li>
-            <li>👆 Swiping felt <strong>laggy and unresponsive</strong> due to rendering delays.</li>
+            <li data-bullet="📸">Loading new <code>&lt;img&gt;</code> elements or background images <strong>froze the UI</strong> while they loaded.</li>
+            <li data-bullet="🐢">Rendering performance was <strong>especially sluggish on iPads</strong> due to their high-resolution displays and underpowered GPUs.</li>
+            <li data-bullet="👆">Swiping felt <strong>laggy and unresponsive</strong> due to rendering delays.</li>
         </ul>
     </section>
 
@@ -32,19 +32,19 @@
         <h2>💡 The solution</h2>
         <p>To achieve smooth performance, I implemented a few creative workarounds:</p>
         <ul>
-            <li>🚀 Used a <strong>GPU-accelerated &lt;canvas&gt;</strong> instead of <code>&lt;img&gt;</code> elements to preload and render images seamlessly.</li>
-            <li>🎭 Implemented a <strong>3D transform hack</strong> to take advantage of GPU acceleration for fluid swiping.</li>
-            <li>📜 Added and removed pages <strong>dynamically in the swiping direction</strong> while using margins to maintain layout stability.</li>
+            <li data-bullet="🚀">Used a <strong>GPU-accelerated &lt;canvas&gt;</strong> instead of <code>&lt;img&gt;</code> elements to preload and render images seamlessly.</li>
+            <li data-bullet="🎭">Implemented a <strong>3D transform hack</strong> to take advantage of GPU acceleration for fluid swiping.</li>
+            <li data-bullet="📜">Added and removed pages <strong>dynamically in the swiping direction</strong> while using margins to maintain layout stability.</li>
         </ul>
     </section>
 
     <section>
         <h2>📈 The impact</h2>
         <p>The biggest success of this project was achieving <span class="highlight">native-like performance and interactivity</span> in a hybrid app, making it feel as smooth as a fully native implementation.</p>
-        <ul>
-            <li>✅ Enabled <span class="highlight">seamless, lag-free scrolling</span> on underpowered devices.</li>
-            <li>✅ Allowed the project to be built as a <span class="highlight">hybrid app</span>, reducing development costs compared to native alternatives.</li>
-            <li>✅ Proved that <span class="highlight">performance is critical to UX</span>—users don’t just see speed, they feel it.</li>
+        <ul class="impact">
+            <li>Enabled <span class="highlight">seamless, lag-free scrolling</span> on underpowered devices.</li>
+            <li>Allowed the project to be built as a <span class="highlight">hybrid app</span>, reducing development costs compared to native alternatives.</li>
+            <li>Proved that <span class="highlight">performance is critical to UX</span>—users don’t just see speed, they feel it.</li>
         </ul>
         <p>Even today, ensuring <span class="highlight">buttery-smooth UI interactions</span> remains one of the most important aspects of UX. The best performance optimizations are often the ones that go beyond standard approaches.</p>
     </section>
