@@ -94,6 +94,19 @@ li:not([data-bullet])::before {
   content: "➡️";
 }
 
+
+.frustrations li::before {
+    content: '👎';
+}
+
+.goals li::before {
+    content: '🚀';
+}
+
+.real li::before {
+    content: '💥';
+}
+
 .highlight {
     font-weight: bold;
 }
