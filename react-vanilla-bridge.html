@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A case study on combining React and custom elements to balance complexity, improve maintainability, and enhance UI performance.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>⚖️ Finding balance: bridging React and vanilla for a cleaner UI</title>
+</head>
+<body>
+    <header>
+        <h1>⚖️ Finding balance: bridging React and vanilla for a cleaner UI</h1>
+        <p><strong>📅 Project year:</strong> 2024</p>
+    </header>
+
+    <section>
+        <h2>🚨 The problem</h2>
+        <p>React is excellent for <span class="highlight">view-as-a-function-of-state</span> UI, but not all UI components fit neatly into this model. Some UI elements work best with a <span class="highlight">more imperative, event-driven approach</span>, since many browser APIs are inherently imperative.</p>
+        <p>Certain components—like <span class="highlight">autocomplete, calendars, and toggletips</span>—were particularly difficult to implement cleanly in React. <span class="highlight">Toggletips</span>, for example, required <span class="highlight">delayed re-insertion of existing DOM nodes</span> to trigger screen readers, something impossible to do with React alone.</p>
+        <p>React's declarative model <span class="highlight">clashed with imperative APIs</span>, making certain UI patterns difficult to implement efficiently.</p>
+    </section>
+    <section>
+        <h2>⚠️ The challenges</h2>
+        <ul>
+            <li>🔗 React's declarative model <span class="highlight">clashed with imperative APIs</span>, making certain UI patterns difficult to implement efficiently.</li>
+            <li>📉 The more components we built, the <span class="highlight">more adapter boilerplate</span> accumulated, increasing maintenance burden.</li>
+            <li>🛠️ Unnecessary re-renders impacted <span class="highlight">performance and UX</span>.</li>
+            <li>🔑 The key was to <span class="highlight">find a natural transition point between React’s declarative model and imperative UI interactions</span>. Without a structured approach, integrating these two paradigms became a significant challenge.</li>
+            <li>🔄 React's poor support for custom elements required creative workarounds, such as a roundabout way to trigger native events and a custom hook for listening to custom events.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>💡 The solution</h2>
+        <ul>
+            <li>🚀 Encapsulated <span class="highlight">imperative behavior</span> inside custom elements, keeping React clean.</li>
+            <li>🔧 React used custom elements <span class="highlight">just like native HTML elements</span>, eliminating unnecessary adapter code.</li>
+            <li>⚡ State was stored <span class="highlight">directly in the DOM</span>, completely eliminating unnecessary re-renders.</li>
+            <li>🌐 The same custom elements were <span class="highlight">usable in traditional server-rendered pages</span>, making the UI <span class="highlight">framework-agnostic</span>.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>📈 The impact</h2>
+        <ul>
+            <li>✅ <span class="highlight">Best of both worlds approach</span>—leveraging React where it shines while using native DOM capabilities where they’re most effective.</li>
+            <li>✅ <span class="highlight">Reduced boilerplate code</span>, making development <span class="highlight">faster and cleaner</span>.</li>
+            <li>✅ <span class="highlight">Improved performance</span> by <span class="highlight">eliminating unnecessary React re-renders</span>.</li>
+            <li>✅ <span class="highlight">Unified component usage</span> across both <span class="highlight">React and traditional server-rendered pages</span>.</li>
+            <li>✅ <span class="highlight">Saved thousands of lines of code</span> by leveraging simpme in-house code over heavy 3rd party libraries.</li>
+            <li>✅ <span class="highlight">Simplified dependency management</span>, making future React upgrades painless by removing outdated, framework-dependent libraries.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>🎓 The lessons learned</h2>
+        <ul>
+            <li>⚖️ <span class="highlight">Balancing declarative and imperative code</span> leads to cleaner, more efficient UIs.</li>
+            <li>🔍 <span class="highlight">Not everything needs to be in React</span>—often, native browser features are the best tool for the job.</li>
+            <li>🌎 <span class="highlight">Framework-agnostic design future-proofs your UI</span>, making it easier to integrate across different architectures.</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p><a href="./">🔙 Back to portfolio</a></p>
+        <p><a href="https://www.linkedin.com/in/hajime-yamasaki-vukelic/">Want to simplify your UI architecture? Let's talk.</a></p>
+    </footer>
+</body>
+</html>
